@@ -13,9 +13,23 @@ import EditarGastos from './componentes/EditarGastos';
 import GastosPorCategoria from './componentes/GastosPorCategoria';
 import ListaGastos from './componentes/ListaGastos';
 import RegistrarUsuario from './componentes/RegistrarUsuario';
+import { Helmet } from 'react-helmet';
+
+//icon
+import favicon from './imagenes/logo.png';
+
+import Fondo from './elementos/Fondo';
+
 //*Crear un componente
 const Index=()=>{
   return( 
+    <>
+    
+    <Helmet>
+      <link ref="shortcut icon" href={favicon} type="image/x-icon"/>
+      <title>HH</title>
+    </Helmet>
+
     <BrowserRouter>
     <Contenedor>
       
@@ -32,6 +46,9 @@ const Index=()=>{
       
     </Contenedor>
     </BrowserRouter>
+
+    <Fondo/>
+    </>
   )
 }
 
