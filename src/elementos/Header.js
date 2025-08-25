@@ -47,3 +47,4 @@ const ContenedorBotones = styled.div`
 `;
 
 export {Header, Titulo, ContenedorHeader, ContenedorBotones};
+

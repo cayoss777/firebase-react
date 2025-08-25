@@ -26,6 +26,9 @@ const App = () => {
           <Boton to="/lista-gastos">
             Lista
           </Boton>
+          <Boton>
+            x
+          </Boton>
         </ContenedorBotones>
       </ContenedorHeader>
     </Header>
