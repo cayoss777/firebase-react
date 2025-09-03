@@ -27,7 +27,7 @@ const App = () => {
             Lista
           </Boton>
           <Boton to="/">
-            exit
+            salir
           </Boton>
         </ContenedorBotones>
       </ContenedorHeader>
