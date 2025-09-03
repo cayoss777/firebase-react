@@ -23,10 +23,16 @@ appId: process.env.REACT_APP_APPID
 const app = initializeApp(firebaseConfig);
 
 
-const auth =getAuth();
+//const auth =getAuth();
 
 const db=getFirestore();
 
-export{db,auth};
+export{db};
 
 export default app;
+
+//
+//const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+export { auth };

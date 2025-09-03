@@ -5,8 +5,11 @@ import Boton from "../elementos/Boton";
 import { ContenedorBoton, Formulario, Input } from "../elementos/ElementosDeFormulario";
 
 
+
 import {auth} from './../firebase/firebaseConfig';
+
 import {useNavigate} from 'react-router-dom';
+
 import {Helmet} from 'react-helmet';
 
 
@@ -14,10 +17,11 @@ import {ReactComponent as SvgLogin} from './../imagenes/registro.svg';
 
 import styled from 'styled-components';
 
-import { createUserWithEmailAndPassword } from "firebase/auth";
 
 import Alerta from './../elementos/Alerta';
 
+//import { signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 
 const Svg = styled(SvgLogin)`
