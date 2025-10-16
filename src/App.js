@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { ContenedorBotones, ContenedorHeader, Header, Titulo } from "./elementos/Header";
 import Boton from "./elementos/Boton";
+import BotonCerrarSesion from "./elementos/BotonCerrarSesion";
 
 const App = () => {
   return (
@@ -26,9 +27,9 @@ const App = () => {
           <Boton to="/lista-gastos">
             Lista
           </Boton>
-          <Boton to="/">
-            salir
-          </Boton>
+          <BotonCerrarSesion>
+            Sal
+          </BotonCerrarSesion>
         </ContenedorBotones>
       </ContenedorHeader>
     </Header>

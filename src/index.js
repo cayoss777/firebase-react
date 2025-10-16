@@ -19,6 +19,7 @@ import { Helmet } from 'react-helmet';
 import favicon from './imagenes/logo.png';
 
 import Fondo from './elementos/Fondo';
+//import RutaProtegida from './componentes/RutasPrivadas';
 
 //*Crear un componente
 const Index=()=>{
@@ -36,11 +37,22 @@ const Index=()=>{
       <Routes>
     
       <Route path='/editar-gastos' element={<EditarGastos/>}/>
+{/**
+ *   <RutaProtegida path="/categoria">
+      <GastosPorCategoria>
+      </GastosPorCategoria>
+      </RutaProtegida>
+ */}
+    
+      
+      
       <Route path='/gastos-categoria' element={<GastosPorCategoria/>}/>
+      
+      
       <Route path='/iniciar-sesion' element={<IniciarSesion/>}/>
       <Route path='/lista-gastos' element={<ListaGastos/>}/>
       <Route path='/registrar-usuario' element={<RegistrarUsuario/>}/>
-      <Route path='/' element={<App/>}/>
+      <Route path='/registrar-usuario' element={<App/>}/>
 
       </Routes>
       
