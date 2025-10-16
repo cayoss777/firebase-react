@@ -29,6 +29,9 @@ const App = () => {
           <Boton to="/">
             salir
           </Boton>
+            <Boton to="/">
+            salir
+          </Boton>
         </ContenedorBotones>
       </ContenedorHeader>
     </Header>
